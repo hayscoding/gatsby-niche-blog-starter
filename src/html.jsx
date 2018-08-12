@@ -7,7 +7,6 @@ import React from "react";
 import faviconApple from '../static/favicons/apple-touch-icon.png'
 import favicon32 from '../static/favicons/favicon-32x32.png'
 import favicon16 from '../static/favicons/favicon-16x16.png'
-import safariPinned from '../static/favicons/safari-pinned-tab.svg'
 import faviconICO from '../static/favicons/favicon.ico'
 //--------------
 
@@ -61,7 +60,6 @@ export default class HTML extends React.Component {
           <link rel="apple-touch-icon" sizes="180x180" href={faviconApple} />
           <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
           <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
-          <link rel="mask-icon" href={safariPinned} color="#a89472" />
           <link rel="shortcut icon" href={faviconICO} />
           <meta name="theme-color" content="#ffffff" />
           {css}

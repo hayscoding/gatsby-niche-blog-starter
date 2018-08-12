@@ -2,8 +2,8 @@ module.exports = {
   blogPostDir: "sample-posts", // The name of directory that contains your posts.
   blogAuthorDir: "sample-authors", // The name of directory that contains your 'authors' folder.
   blogAuthorId: "casper", // The default and fallback author ID used for blog posts without a defined author.
-  siteTitle: "ProductLife", // Site title.
-  siteTitleAlt: "ProductLife | Learn JavaScript With Products", // Alternative site title for SEO.
+  siteTitle: "Hays Stanford", // Site title.
+  siteTitleAlt: "Hays Stanford | Online Enthusiast", // Alternative site title for SEO.
   siteLogo:
     "https://haysclark.github.io/gatsby-starter-casper/logos/logo-1024.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://productlife.netlify.com", // Domain of your website without pathPrefix.
