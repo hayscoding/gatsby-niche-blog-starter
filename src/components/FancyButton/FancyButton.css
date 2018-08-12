@@ -1,0 +1,119 @@
+.fancy-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 9px;
+    padding: 1em 1em;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    opacity: 1;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 22px;
+    white-space: nowrap;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin-bottom: 0px;
+    overflow: auto;
+    white-space:normal;
+}
+
+.fancy-button::before {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+}
+
+.fancy-button:hover {
+    margin-top: 1em;
+    margin-bottom: 0px;
+    padding: 1em 1em;
+    font-size: 21px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.fancy-button:focus {
+    outline: 0;
+}
+
+/* When the navigation is closed */
+.nav-closed .fancy-button {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-closed .fancy-button:hover {
+    color: rgba(233, 255, 255, 1);
+}
+
+/* When the navigation is closed and there is no cover image */
+.nav-closed .no-cover .fancy-button {
+    border-color: #bfc8cd;
+    color: #9eabb3;
+}
+
+.nav-closed .no-cover .fancy-button:hover {
+    border-color: #555;
+    color: #555;
+}
+
+/* When the navigation is opened */
+.nav-opened .fancy-button {
+    padding: 0 12px;
+    background: #111;
+    border-color: #111;
+    color: #fff;
+    -webkit-transform: translate3d(94px, 0, 0);
+    -ms-transform: translate3d(94px, 0, 0);
+    transform: translate3d(94px, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.nav-opened .fancy-button .word {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+      Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+    .fancy-button {
+        margin-top: 1em;
+        margin-bottom: 9px;
+        padding: 1em 1em;
+        font-size: 18px;
+        border-radius: 10px;
+        border-width: 1;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #222;
+    }
+
+    .fancy-button:hover {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        padding: 1em 1em;
+        font-size: 21px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+}
+
+/* ==========================================================================
+   14. Animations
+   ========================================================================== */
+
+/* Add subtle load-in animation for content on the home page */
+.home-template .fancy-button {
+    -webkit-animation: fade-in-down 0.9s;
+    animation: fade-in-down 0.9s both;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}

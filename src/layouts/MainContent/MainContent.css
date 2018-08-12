@@ -1,0 +1,52 @@
+/* Stop elements, such as img wider than the post content, from
+   creating horizontal scroll - slight hack due to imperfections
+   with browser width % calculations and rounding */
+.post-template .content,
+.page-template .content {
+    overflow: hidden;
+}
+
+#tools, #content .row {
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+#testimonials .row {
+	max-width: 80%;
+    margin: auto;
+}
+
+.regular-background {
+	background: gray;
+}
+
+
+@media screen and (min-width: 850px) {
+    #tools {
+	    max-width: 70%;
+	    margin: auto;
+	}
+
+    .small-col, .multi-col {
+        margin: auto;
+    }
+
+    .multi-col {
+    	margin: auto 2.5%;
+    }
+
+    .small-left {
+    	margin-right: 5%;
+    }
+
+    .small-right {
+    	margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .col {
+        padding-bottom: 10%;
+    }
+}
