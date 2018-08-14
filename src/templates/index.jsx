@@ -109,7 +109,7 @@ class IndexTemplate extends React.Component {
 
         <SiteWrapper>
           {/* All the main content gets inserted here */}
-          <div className="home-template" style={{background: 'linear-gradient(to right bottom, #430089, #82ffa1)'}}>
+          <div className="home-template" style={{background: 'white'}}>
             {/* The big featured header */}
             <MainHeader cover={config.siteCover}>
               {/*
@@ -154,8 +154,7 @@ class IndexTemplate extends React.Component {
               total={total}
               limit={limit}
               prev={prev}
-              next={next}
-            >
+              next={next}>
               {/* PostListing component renders all the posts */}
               <PostListing postEdges={nodes} postAuthors={authorsEdges} />
             </PaginatedContent>
