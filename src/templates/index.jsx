@@ -148,80 +148,18 @@ class IndexTemplate extends React.Component {
                 <span className="hidden">Scroll Down</span>
               </Link>
             </MainHeader>
-            <MainContent>
-              <div id="tools" style={styles.mainDiv}>
-                <br />
-                <br />
-                <br />
-                <div  style={styles.mainCol}>
-                  <h2 style={{color: "black"}}>Build Apps With React and Node.js</h2>
-                  <hr style={styles.regLine}/>
-                  <div className="row">
-                    <div className="small-col small-left">
-                      <PageImage imageUrl={'./images/node-js-logo.png'} widthPx={200} />
-                    </div>
-                    <div className="small-col small-right">
-                      <PageImage imageUrl={'./images/react-logo.png'} widthPx={300} />
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <br />
-              </div>
-            </MainContent>
-            <MainContent>
-              <div id="testimonials" style={styles.mainDiv}>
-                <div  style={styles.mainCol}>
-                  <h2 style={{color: "black"}}>Work Together or Alone</h2>
-                  <hr style={styles.regLine}/>
-                  <div className="row">
-                    <div style={styles.circleImage} className="multi-col">
-                      <PageImage imageUrl={'./images/person-1.jpg'} widthPx={150} rounded={true} />
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-2.jpg'} widthPx={150} rounded={true}/>
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-3.jpg'} widthPx={150} rounded={true}/>
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-5.jpg'} widthPx={150} rounded={true}/>
-                    </div>
-                    <div className="multi-col">
-                      <PageImage imageUrl={'./images/person-4.jpg'} widthPx={150} rounded={true}/>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <br />
-              </div>
-            </MainContent>
-            <MainContent>
-             <div id="content" style={styles.mainDiv}>
-                <div style={styles.mainCol}>
-                <div className="row">
-                    <div className="small-col small-left">
-                      <PageImage imageUrl={'./images/instructor.jpg'} widthPx={350} rounded={true}/>
-                    </div>
-                    <div className="small-col small-right">
-                      <h2 style={{color: "black", paddingBottom: '20px'}}>Hays Stanford</h2>
-                      My name is Hays Stanford and I'll be your instructor. You will be provided with step-by-step details on how to build the projects you and your fellow students choose. 
-                      <br /><br />
-                      I will show you how to break a product idea into small, managable bits. We will then execute each of the steps until the idea has been brought to life.
-                    </div>
-                  </div>
-                  
-                  <hr style={styles.regLine}/>
-                    {this.showSignup()}
-                </div>
-                <br />
-                <br />
-                <br />
-              </div>
-            </MainContent>
-            </div>
+            <PaginatedContent
+              page={page}
+              pages={pages}
+              total={total}
+              limit={limit}
+              prev={prev}
+              next={next}
+            >
+              {/* PostListing component renders all the posts */}
+              <PostListing postEdges={nodes} postAuthors={authorsEdges} />
+            </PaginatedContent>
+          </div>
 
           {/* The tiny footer at the very bottom */}
           <Footer
