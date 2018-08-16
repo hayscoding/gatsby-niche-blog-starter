@@ -39,7 +39,8 @@
     "react-scroll": "^1.7.3",
     "react-share": "^1.15.1",
     "react-social-icons": "^2.7.0",
-    "react-twitter-widgets": "^1.4.0"
+    "react-twitter-widgets": "^1.4.0",
+    "react-youtube": "^7.6.0"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
