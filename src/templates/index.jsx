@@ -137,7 +137,7 @@ class IndexTemplate extends React.Component {
                     </div>
 
                     <div className="col right">
-                      <Video width="600" />
+                      <Video />
                     </div>
                   </div>
                 </div>

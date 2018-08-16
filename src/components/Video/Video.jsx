@@ -23,19 +23,24 @@ class Video extends Component {
 
 
   render() {
-    const { width } = this.props;
-
+    const width = 600
     const height = width * 9/16
 
     // console.log(this.state.width, " widthPx: ", widthPx)
 
-		if(width)
-		    return (
-		      <div className="page-image">
-		    		<iframe width={width.toString()} height={height.toString()} src="https://www.youtube.com/embed/tcBBj9PY8vY?start=333" frameBorder="0" allowFullScreen></iframe>
-		      </div>
-		    );
-		else
+		if(width && width+70 < this.state.width)
+	    return (
+	      <div className="video">
+	    		<iframe width={width.toString()} height={height.toString()} src="https://www.youtube.com/embed/tcBBj9PY8vY?start=333" frameBorder="0" allowFullScreen></iframe>
+	      </div>
+	    );
+		else if(width) {
+			return (
+	      <div className="video">
+	    		<iframe width={250} height={250 * 9/16} src="https://www.youtube.com/embed/tcBBj9PY8vY?start=333" frameBorder="0" allowFullScreen></iframe>
+	      </div>
+	    );
+		} else
 			return null
   }
 }
