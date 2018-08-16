@@ -1,7 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "react-scroll";
-import YouTube from "react-youtube";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
@@ -16,6 +15,7 @@ import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";
 import PageTitle from "../components/PageTitle/PageTitle";
 import PageImage from "../components/PageImage/PageImage";
+import Video from "../components/Video/Video";
 import PageDescription from "../components/PageDescription/PageDescription";
 import PageEmailForm from "../components/PageEmailForm/PageEmailForm";
 import ProductVote from "../components/ProductVote/ProductVote";
@@ -27,13 +27,6 @@ const pageTitle = "Instabuilder 2.0 for Wordpress"
 
 //Image Urls
 const gifUrl = './images/sample-project-2.gif'
-
-//Embeds
-const productVideo = () => {
-  return(
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tcBBj9PY8vY?start=333" frameBorder="0" allowFullScreen></iframe>
-  )
-}
 
 class IndexTemplate extends React.Component {
   constructor(props) {
@@ -144,7 +137,7 @@ class IndexTemplate extends React.Component {
                     </div>
 
                     <div className="col right">
-                      {productVideo()}
+                      <Video width="600" />
                     </div>
                   </div>
                 </div>
