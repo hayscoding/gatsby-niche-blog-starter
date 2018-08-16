@@ -21,7 +21,18 @@ import ProductVote from "../components/ProductVote/ProductVote";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 
+//Page text
+const pageTitle = "Instabuilder 2.0 for Wordpress"
+
+//Image Urls
 const gifUrl = './images/sample-project-2.gif'
+
+//Embeds
+const productVideo = () => {
+  return(
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tcBBj9PY8vY?start=333" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  )
+}
 
 class IndexTemplate extends React.Component {
   constructor(props) {
@@ -101,7 +112,7 @@ class IndexTemplate extends React.Component {
     return (
 
       <Drawer className="home-template" isOpen={this.state.menuOpen}>
-        <Helmet title={config.siteTitle} />
+        <Helmet title={pageTitle} />
         <SEO postEdges={nodes} />
 
         {/* The blog navigation links */}
@@ -117,23 +128,22 @@ class IndexTemplate extends React.Component {
               </MainNav>
               */}
               <div className="vertical">
-                <PageTitle text={config.siteTitle} />
+                <PageTitle text={pageTitle} />
                 <div className="main-header-content inner">
                   <div className="row">
                     <div className="col left">
-                      <PageDescription text={config.siteDescription} />
+                      <PageDescription text={"asdfs"}/>
                       <Link
                         to="signup"
                         data-offset="-45"
                         spy
                         smooth
                         duration={500}>
-                        <ProductVote />
                       </Link>
                     </div>
 
                     <div className="col right">
-                      <PageImage imageUrl={gifUrl} />
+                      {productVideo()}
                     </div>
                   </div>
                 </div>
