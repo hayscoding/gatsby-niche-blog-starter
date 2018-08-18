@@ -23,7 +23,8 @@ import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 
 //Page text
-const pageTitle = "Instabuilder 2.0 for Wordpress"
+const title = "Landing Page Creator for Wordpress"
+const description = "Create High Converting Landing Pages Without Code"
 
 //Image Urls
 const gifUrl = './images/sample-project-2.gif'
@@ -106,7 +107,7 @@ class IndexTemplate extends React.Component {
     return (
 
       <Drawer className="home-template" isOpen={this.state.menuOpen}>
-        <Helmet title={pageTitle} />
+        <Helmet title={title} />
         <SEO postEdges={nodes} />
 
         {/* The blog navigation links */}
@@ -122,23 +123,10 @@ class IndexTemplate extends React.Component {
               </MainNav>
               */}
               <div className="vertical">
-                <PageTitle text={pageTitle} />
+                <PageTitle text={title} />
                 <div className="main-header-content inner">
                   <div className="row">
-                    <div className="col left">
-                      <PageDescription text={"asdfs"}/>
-                      <Link
-                        to="signup"
-                        data-offset="-45"
-                        spy
-                        smooth
-                        duration={500}>
-                      </Link>
-                    </div>
-
-                    <div className="col right">
-                      <Video />
-                    </div>
+                      <PageDescription text={description}/>
                   </div>
                 </div>
               </div>
