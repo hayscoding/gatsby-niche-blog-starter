@@ -118,10 +118,14 @@ class IndexTemplate extends React.Component {
           <div className="home-template" style={{background: 'white'}}>
             {/* The big featured header */}
             <MainHeader cover={config.siteCover}>
-              {/*
               <MainNav overlay={config.siteCover}>
+                <div style={{display: 'flex', maxWidth: '900px', margin: 'auto'}} >
+                  <h3 style={{flex: '1'}}>Hays Stanford</h3>
+                  <div style={{flex: '2'}}>
+                    <h3 style={{flex: '1'}}>Hays Stanford</h3>
+                  </div>
+                </div>
               </MainNav>
-              */}
               <div className="vertical">
                 <PageTitle text={title} />
                 <div className="main-header-content inner">
