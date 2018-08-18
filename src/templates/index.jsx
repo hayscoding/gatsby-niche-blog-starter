@@ -128,6 +128,9 @@ class IndexTemplate extends React.Component {
                   <div className="row">
                       <PageDescription text={description}/>
                   </div>
+                  <div className="row">
+                      <PageEmailForm />
+                  </div>
                 </div>
               </div>
               <Link
