@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Link } from "react-scroll";
+import { Link as Scroll } from "react-scroll";
+import Link from "gatsby-link";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
@@ -120,7 +121,9 @@ class IndexTemplate extends React.Component {
             <MainHeader cover={config.siteCover}>
               <MainNav overlay={config.siteCover}>
                 <div style={{display: 'flex', maxWidth: '900px', margin: 'auto'}} >
-                  <h3 style={{flex: '1', color: '#f7f7f7'}}>Hays Stanford</h3>
+                  <Link to='/'>
+                    <h3 style={{flex: '1', color: '#f7f7f7'}}>Hays Stanford</h3>
+                  </Link>
                   <div style={{flex: '1', color: '#f7f7f7'}}></div>
                   <div style={{flex: '2', display: 'flex', margin: 'auto'}}>
                     <h5 style={{flex: '1', color: '#f7f7f7'}}>Read</h5>
@@ -141,7 +144,7 @@ class IndexTemplate extends React.Component {
                   </div>
                 </div>
               </div>
-              <Link
+              <Scroll
                 className="scroll-down icon-arrow-left"
                 to="content"
                 style={{color: 'rgba(0, 0, 0, 0.75)'}}
@@ -150,7 +153,7 @@ class IndexTemplate extends React.Component {
                 smooth
                 duration={500}>
                 <span className="hidden">Scroll Down</span>
-              </Link>
+              </Scroll>
             </MainHeader>
             <PaginatedContent
               page={page}
