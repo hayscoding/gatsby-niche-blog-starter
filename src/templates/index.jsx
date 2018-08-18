@@ -121,8 +121,12 @@ class IndexTemplate extends React.Component {
               <MainNav overlay={config.siteCover}>
                 <div style={{display: 'flex', maxWidth: '900px', margin: 'auto'}} >
                   <h3 style={{flex: '1'}}>Hays Stanford</h3>
-                  <div style={{flex: '3'}}>
-                    <h5 style={{flex: '1', textAlign: 'center', magin: 'auto'}}>Hays Stanford</h5>
+                  <div style={{flex: '1'}}></div>
+                  <div style={{flex: '2', display: 'flex', margin: 'auto'}}>
+                    <h5 style={{flex: '1',}}>Read</h5>
+                    <h5 style={{flex: '1',}}>Free Stuff</h5>
+                    <h5 style={{flex: '1',}}>About</h5>
+                    <h5 style={{flex: '1',}}>Contact</h5>
                   </div>
                 </div>
               </MainNav>
