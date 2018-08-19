@@ -12,6 +12,7 @@ import Footer from "../components/Footer/Footer";
 import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
 import MainContent from "../layouts/MainContent/MainContent";
+import MainNavBar from "../components/MainNavBar/MainNavBar";
 import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";
 import PageTitle from "../components/PageTitle/PageTitle";
@@ -119,28 +120,7 @@ class IndexTemplate extends React.Component {
           <div className="home-template" style={{background: 'white'}}>
             {/* The big featured header */}
             <MainHeader cover={config.siteCover}>
-              <MainNav overlay={config.siteCover}>
-                <div style={{display: 'flex', maxWidth: '900px', margin: 'auto'}} >
-                  <Link to='/'>
-                    <h3 style={{flex: '1', color: '#f7f7f7'}}>Hays Stanford</h3>
-                  </Link>
-                  <div style={{flex: '1', color: '#f7f7f7'}}></div>
-                  <div style={{flex: '2', display: 'flex', margin: 'auto'}}>
-                    <Link to='/' style={{flex: '1'}}>
-                      <h5 style={{color: '#f7f7f7'}}>Read</h5>
-                    </Link>
-                    <Link to='/' style={{flex: '1'}}>
-                      <h5 style={{color: '#f7f7f7'}}>Free Stuff</h5>
-                    </Link>
-                    <Link to='/' style={{flex: '1'}}>
-                      <h5 style={{color: '#f7f7f7'}}>About</h5>
-                    </Link>
-                    <Link to='/' style={{flex: '1'}}>
-                      <h5 style={{color: '#f7f7f7'}}>Contact</h5>
-                    </Link>
-                  </div>
-                </div>
-              </MainNav>
+              <MainNavBar overlay={config.siteCover} />
               <div className="vertical">
                 <PageTitle text={title} />
                 <div className="main-header-content inner">
