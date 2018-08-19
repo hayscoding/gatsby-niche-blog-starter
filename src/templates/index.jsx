@@ -126,10 +126,18 @@ class IndexTemplate extends React.Component {
                   </Link>
                   <div style={{flex: '1', color: '#f7f7f7'}}></div>
                   <div style={{flex: '2', display: 'flex', margin: 'auto'}}>
-                    <h5 style={{flex: '1', color: '#f7f7f7'}}>Read</h5>
-                    <h5 style={{flex: '1', color: '#f7f7f7'}}>Free Stuff</h5>
-                    <h5 style={{flex: '1', color: '#f7f7f7'}}>About</h5>
-                    <h5 style={{flex: '1', color: '#f7f7f7'}}>Contact</h5>
+                    <Link to='/' style={{flex: '1'}}>
+                      <h5 style={{color: '#f7f7f7'}}>Read</h5>
+                    </Link>
+                    <Link to='/' style={{flex: '1'}}>
+                      <h5 style={{color: '#f7f7f7'}}>Free Stuff</h5>
+                    </Link>
+                    <Link to='/' style={{flex: '1'}}>
+                      <h5 style={{color: '#f7f7f7'}}>About</h5>
+                    </Link>
+                    <Link to='/' style={{flex: '1'}}>
+                      <h5 style={{color: '#f7f7f7'}}>Contact</h5>
+                    </Link>
                   </div>
                 </div>
               </MainNav>
