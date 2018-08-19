@@ -90,7 +90,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           console.log(result.errors);
           reject(result.errors);
         }
-
+        
         // Creates Index page
         createPaginationPages({
           createPage,
