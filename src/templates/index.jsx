@@ -11,7 +11,6 @@ import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
 import Footer from "../components/Footer/Footer";
 import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
-import MainContent from "../layouts/MainContent/MainContent";
 import MainNavBar from "../components/MainNavBar/MainNavBar";
 import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";

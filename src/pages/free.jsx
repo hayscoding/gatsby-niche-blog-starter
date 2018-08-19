@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
+
 import MainNavBar from "../components/MainNavBar/MainNavBar";
+import MainContent from "../layouts/MainContent/MainContent";
+
 import config from "../../data/SiteConfig";
 
 class FreePage extends Component {
@@ -11,7 +14,9 @@ class FreePage extends Component {
         <div style={{display: 'inline-block', height: '50px', textAlign: 'center'}}>
       		<MainNavBar overlay={config.siteCover} />
         </div>
-        <h1>Free stuff page</h1>
+        <MainContent className="page-template">
+        	<h1>Free stuff page</h1>
+        </MainContent>
       </div>
     );
   }
