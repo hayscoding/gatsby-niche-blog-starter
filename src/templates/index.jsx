@@ -23,9 +23,10 @@ import ProductVote from "../components/ProductVote/ProductVote";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 
-//Page text
-const title = "Landing Page Creator for Wordpress"
-const description = "Create High Converting Landing Pages Without Code"
+const helmetTitle = "Hays Stanford"
+
+const title = 'Stop Being a Slave. Make Money Online.'
+const description = "Guide yourself to freedom with thousands of other members."
 
 //Image Urls
 const gifUrl = './images/sample-project-2.gif'
@@ -119,7 +120,7 @@ class IndexTemplate extends React.Component {
     return (
 
       <Drawer className="home-template" isOpen={this.state.menuOpen}>
-        <Helmet title={title} />
+        <Helmet title={helmetTitle} />
         <SEO postEdges={nodes} />
 
         {/* The blog navigation links */}
@@ -127,32 +128,35 @@ class IndexTemplate extends React.Component {
 
         <SiteWrapper>
           {/* All the main content gets inserted here */}
-          <div className="home-template" style={{background: 'white'}}>
+          <div className="home-template">
             {/* The big featured header */}
-            <MainHeader cover={config.siteCover}>
-              <MainNavBar overlay={config.siteCover} />
-              <div className="vertical">
-                <PageTitle text={title} />
-                <div className="main-header-content inner">
-                  <div className="row">
-                      <PageDescription text={description}/>
-                  </div>
-                  <div className="row">
-                      <PageEmailForm />
+            <div style={{background: 'linear-gradient(to right bottom, #fff, #d8dfff)'}}>
+              <MainHeader cover={config.siteCover} >
+                <MainNavBar overlay={config.siteCover} />
+                <div className="vertical">
+                  <PageTitle text={title} />
+                  <div className="main-header-content inner">
+                    <div className="row">
+                        <PageDescription text={description}/>
+                    </div>
+                    <div className="row">
+                        <PageEmailForm />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <Scroll
-                className="scroll-down icon-arrow-left"
-                to="content"
-                style={{color: 'rgba(0, 0, 0, 0.75)'}}
-                data-offset="-45"
-                spy
-                smooth
-                duration={500}>
-                <span className="hidden">Scroll Down</span>
-              </Scroll>
-            </MainHeader>
+                <Scroll
+                  className="scroll-down icon-arrow-left"
+                  to="content"
+                  style={{color: 'rgba(0, 0, 0, 0.75)'}}
+                  data-offset="-45"
+                  spy
+                  smooth
+                  duration={500}>
+                  <span className="hidden">Scroll Down</span>
+                </Scroll>
+              </MainHeader>
+            </div>
+
             <PaginatedContent
               page={page}
               pages={pages}
