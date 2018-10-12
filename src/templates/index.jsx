@@ -129,8 +129,8 @@ class IndexTemplate extends React.Component {
         <SiteWrapper>
           {/* All the main content gets inserted here */}
           <div className="home-template">
-            {/* The big featured header */}
-            <div style={{background: 'linear-gradient(#b7b7b7, #fff)'}}>
+            {/* The big featured header 'linear-gradient(#b7b7b7, #fff)'*/}
+            <div style={{background: '#e6e8f4'}}>
               <MainHeader cover={config.siteCover} >
                 <MainNavBar overlay={config.siteCover}/>
                 <div className="vertical">

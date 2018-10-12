@@ -61,17 +61,17 @@ input[type="button"] {
     border: none;
     font: 95% Arial, Helvetica, sans-serif;
     font-size: 1.5em;
-    background: rgba(14, 45, 190, 0.8);
+    background: rgba(14, 45, 190, 1);
     color: white;
 }
 
 input[type="submit"]:hover,
 input[type="button"]:hover {
-    -webkit-transition: all 0.20s ease-in-out;
-    -moz-transition: all 0.20s ease-in-out;
-    -ms-transition: all 0.20s ease-in-out;
-    -o-transition: all 0.20s ease-in-out;
-    background: rgba(14, 45, 190, 1);
+    -webkit-transition: all 0.40s;
+    -moz-transition: all 0.40s;
+    -ms-transition: all 0.40s;
+    -o-transition: all 0.40s;
+    background: rgba(93, 0, 170, 1);
 }
 
 @media screen and (max-width: 767px) {
