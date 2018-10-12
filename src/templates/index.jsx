@@ -130,7 +130,7 @@ class IndexTemplate extends React.Component {
           {/* All the main content gets inserted here */}
           <div className="home-template">
             {/* The big featured header */}
-            <div style={{background: 'linear-gradient(to right bottom, #fff, #d8dfff)'}}>
+            <div style={{background: 'linear-gradient(#607bff, #001891)'}}>
               <MainHeader cover={config.siteCover} >
                 <MainNavBar overlay={config.siteCover} />
                 <div className="vertical">

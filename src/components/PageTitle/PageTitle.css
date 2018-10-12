@@ -6,7 +6,8 @@
     height: 50px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
-    color: rgba(0, 0, 0, 0.8);
+    /*color: rgba(0, 0, 0, 0.8);*/
+    color: #fff;
 }
 
 .no-cover .page-title {
