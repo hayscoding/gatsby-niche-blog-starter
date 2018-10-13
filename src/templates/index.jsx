@@ -147,7 +147,7 @@ class IndexTemplate extends React.Component {
                 <Scroll
                   className="scroll-down icon-arrow-left"
                   to="content"
-                  style={{color: 'rgba(0, 42, 255, 0.9)'}}
+                  style={{color: 'rgba(0, 0, 0, 0.9)'}}
                   data-offset="-45"
                   spy
                   smooth
