@@ -7,7 +7,8 @@
     font-weight: 600;
     font-family: "Merriweather", serif;
     letter-spacing: 0rem;
-    color: rgba(22, 49, 189, 0.95);
+    /*color: rgba(22, 49, 189, 0.95);*/
+    color: #333333;
 }
 
 .no-cover .page-description {
