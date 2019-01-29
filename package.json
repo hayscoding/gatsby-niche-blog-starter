@@ -1,7 +1,7 @@
 {
   "name": "productlife",
   "description": "Learn how to create your own products that are useful and make money.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Hays Stanford <stanfordhays@gmail.com>",
   "dependencies": {
     "babel-eslint": "^8.1.2",
